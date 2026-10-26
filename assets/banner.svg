@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="45%" stop-color="#0b1120" />
+      <stop offset="85%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Accent Gradient for Highlights -->
+    <linearGradient id="cyberCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.4" />
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-bright" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .cyber-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .code-font { font-family: "JetBrains Mono", Consolas, "Fira Code", monospace; }
+      
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes floatPulse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.8; }
+      }
+      .radar-arm {
+        transform-origin: 1040px 180px;
+        animation: radarSweep 8s linear infinite;
+      }
+      .floating-badge {
+        animation: floatPulse 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" fill="url(#grid)" />
+
+  <!-- Animated Cyber Network Wave Lines (Background Layer) -->
+  <g opacity="0.25">
+    <path d="M -50 280 C 250 320, 450 180, 800 240 C 950 270, 1100 200, 1250 230" fill="none" stroke="#0ea5e9" stroke-width="1.5">
+      <animate attributeName="d" 
+        values="M -50 280 C 250 320, 450 180, 800 240 C 950 270, 1100 200, 1250 230;
+                M -50 260 C 250 200, 500 310, 800 220 C 950 180, 1100 250, 1250 210;
+                M -50 280 C 250 320, 450 180, 800 240 C 950 270, 1100 200, 1250 230" 
+        dur="12s" repeatCount="indefinite" />
+    </path>
+    <path d="M -50 310 C 280 240, 550 340, 850 270 C 1000 230, 1120 290, 1250 260" fill="none" stroke="#6366f1" stroke-width="1.2">
+      <animate attributeName="d" 
+        values="M -50 310 C 280 240, 550 340, 850 270 C 1000 230, 1120 290, 1250 260;
+                M -50 320 C 280 300, 550 220, 850 300 C 1000 260, 1120 240, 1250 280;
+                M -50 310 C 280 240, 550 340, 850 270 C 1000 230, 1120 290, 1250 260" 
+        dur="16s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- DYNAMIC ELEMENT 1: Interactive Incident Radar (Right Side) -->
+  <g id="radar-system">
+    <!-- Concentric Range Circles -->
+    <circle cx="1040" cy="180" r="130" fill="none" stroke="#1e293b" stroke-width="1.2" stroke-dasharray="4 4" />
+    <circle cx="1040" cy="180" r="95" fill="none" stroke="#334155" stroke-width="1" />
+    <circle cx="1040" cy="180" r="60" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.4" />
+    <circle cx="1040" cy="180" r="25" fill="#0369a1" fill-opacity="0.1" stroke="#38bdf8" stroke-width="1.5" />
+
+    <!-- Pulsing Radar Echo Rings -->
+    <circle cx="1040" cy="180" r="20" fill="none" stroke="#38bdf8" stroke-width="2">
+      <animate attributeName="r" values="20;135" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1040" cy="180" r="20" fill="none" stroke="#a855f7" stroke-width="1.5">
+      <animate attributeName="r" values="20;110" dur="4.2s" begin="1.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0" dur="4.2s" begin="1.2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Radar Crosshairs -->
+    <line x1="910" y1="180" x2="1170" y2="180" stroke="#1e293b" stroke-width="1" />
+    <line x1="1040" y1="50" x2="1040" y2="310" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Rotating Radar Scanner Arm -->
+    <g class="radar-arm">
+      <line x1="1040" y1="180" x2="1165" y2="180" stroke="url(#cyberCyan)" stroke-width="2" filter="url(#glow)" />
+      <path d="M 1040 180 L 1150 140 A 130 130 0 0 1 1165 180 Z" fill="#0284c7" fill-opacity="0.12" />
+    </g>
+
+    <!-- Incident Targets & Blips -->
+    <!-- Blip 1: Critical Intrusion Detected (Pulsing Red) -->
+    <g transform="translate(1095, 125)">
+      <circle cx="0" cy="0" r="4.5" fill="#ef4444" filter="url(#glow-bright)">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#ef4444" stroke-width="1">
+        <animate attributeName="r" values="4;14" dur="1.4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.9;0" dur="1.4s" repeatCount="indefinite" />
+      </circle>
+      <text x="12" y="4" fill="#f87171" font-size="9" class="code-font" font-weight="bold">INCIDENT-904</text>
+    </g>
+
+    <!-- Blip 2: Triage Automated (Amber) -->
+    <g transform="translate(980, 225)">
+      <circle cx="0" cy="0" r="3.5" fill="#f59e0b" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite" />
+      </circle>
+      <text x="-58" y="3" fill="#fbbf24" font-size="8.5" class="code-font">AUTO-TRIAGE</text>
+    </g>
+
+    <!-- Blip 3: Remediated / Contained (Green) -->
+    <g transform="translate(1015, 105)">
+      <circle cx="0" cy="0" r="4" fill="#10b981" filter="url(#glow)" />
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#10b981" stroke-width="0.8">
+        <animate attributeName="r" values="4;10" dur="2.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.8;0" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+      <text x="10" y="3" fill="#34d399" font-size="8.5" class="code-font">CONTAINED</text>
+    </g>
+
+    <!-- Radar Center Pivot Point -->
+    <circle cx="1040" cy="180" r="5" fill="#38bdf8" filter="url(#glow)" />
+  </g>
+
+  <!-- DYNAMIC ELEMENT 2: Flowing SecOps Pipeline (Bottom Center) -->
+  <g id="pipeline-stream" opacity="0.85">
+    <!-- Pathway Rail -->
+    <line x1="70" y1="305" x2="680" y2="305" stroke="#1e293b" stroke-width="2" stroke-dasharray="6 4" />
+    
+    <!-- Moving Packets Along Pipeline -->
+    <circle cx="70" cy="305" r="3.5" fill="#38bdf8" filter="url(#glow)">
+      <animate attributeName="cx" values="70;680" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#ef4444;#f59e0b;#06b6d4;#10b981" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="70" cy="305" r="2.5" fill="#818cf8">
+      <animate attributeName="cx" values="70;680" dur="5s" begin="2.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Stage Indicators on Pipeline -->
+    <g transform="translate(70, 305)">
+      <circle cx="0" cy="0" r="4" fill="#0f172a" stroke="#ef4444" stroke-width="1.5" />
+      <text x="0" y="20" fill="#94a3b8" font-size="9" class="code-font" text-anchor="middle">DETECT</text>
+    </g>
+    <g transform="translate(260, 305)">
+      <circle cx="0" cy="0" r="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="0" y="20" fill="#94a3b8" font-size="9" class="code-font" text-anchor="middle">TRIAGE</text>
+    </g>
+    <g transform="translate(460, 305)">
+      <circle cx="0" cy="0" r="4" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
+      <text x="0" y="20" fill="#94a3b8" font-size="9" class="code-font" text-anchor="middle">CONTAIN</text>
+    </g>
+    <g transform="translate(680, 305)">
+      <circle cx="0" cy="0" r="4" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+      <text x="0" y="20" fill="#94a3b8" font-size="9" class="code-font" text-anchor="middle">REMEDIATE</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND CONTENT: High contrast text and branding (Never obscured) -->
+  <g id="brand-content" transform="translate(70, 50)">
+    
+    <!-- Top Cyber Badge / Pill -->
+    <g class="floating-badge">
+      <rect x="0" y="0" width="410" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="14" r="5" fill="#10b981" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="30" y="18" fill="#38bdf8" font-size="10.5" class="code-font" font-weight="bold" letter-spacing="1.2">
+        SECURITY INCIDENT RESPONSE (SIR) ECOSYSTEM
+      </text>
+    </g>
+
+    <!-- Main Title (Ultra crisp, bold, high-contrast) -->
+    <g transform="translate(0, 68)">
+      <!-- Main Headline -->
+      <text x="0" y="0" fill="#ffffff" font-size="34" class="cyber-font" font-weight="800" letter-spacing="-0.5">
+        Awesome Security Incident Response
+      </text>
+      <!-- Sub-headline Gradient Accent -->
+      <text x="0" y="38" fill="url(#textGrad)" font-size="28" class="cyber-font" font-weight="700">
+        &amp; SOAR Automation Ecosystem
+      </text>
+    </g>
+
+    <!-- Description Subtitle -->
+    <g transform="translate(0, 142)">
+      <text x="0" y="0" fill="#cbd5e1" font-size="14.5" class="cyber-font" font-weight="400">
+        Curated SaaS Platforms &amp; Open-Source Projects for SOC Analysts, CSIRTs &amp; DFIR Engineers
+      </text>
+      <text x="0" y="24" fill="#94a3b8" font-size="13" class="cyber-font" font-weight="400">
+        Case Management • Playbook Orchestration • Live Telemetry • Threat Intelligence Enrichment
+      </text>
+    </g>
+
+    <!-- Feature Tags Pill Row -->
+    <g transform="translate(0, 195)">
+      <!-- Tag 1: SOAR -->
+      <rect x="0" y="0" width="76" height="24" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="38" y="15.5" fill="#38bdf8" font-size="10" class="code-font" text-anchor="middle" font-weight="600">⚡ SOAR</text>
+
+      <!-- Tag 2: DFIR -->
+      <rect x="86" y="0" width="72" height="24" rx="12" fill="#1e293b" stroke="#818cf8" stroke-width="0.8" />
+      <text x="122" y="15.5" fill="#a5b4fc" font-size="10" class="code-font" text-anchor="middle" font-weight="600">🔍 DFIR</text>
+
+      <!-- Tag 3: Case Mgmt -->
+      <rect x="168" y="0" width="102" height="24" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="0.8" />
+      <text x="219" y="15.5" fill="#67e8f9" font-size="10" class="code-font" text-anchor="middle" font-weight="600">📋 TRIAGE &amp; SIR</text>
+
+      <!-- Tag 4: Open Source -->
+      <rect x="280" y="0" width="115" height="24" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="0.8" />
+      <text x="337" y="15.5" fill="#6ee7b7" font-size="10" class="code-font" text-anchor="middle" font-weight="600">🔓 OPEN SOURCE</text>
+
+      <!-- Tag 5: MITRE ATT&CK -->
+      <rect x="405" y="0" width="115" height="24" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="0.8" />
+      <text x="462" y="15.5" fill="#fcd34d" font-size="10" class="code-font" text-anchor="middle" font-weight="600">🎯 MITRE ATT&amp;CK</text>
+    </g>
+  </g>
+
+  <!-- Top Accent Glowing Cyber Line -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#cyberCyan)" />
+  <!-- Bottom Border Line -->
+  <rect x="0" y="357" width="1200" height="3" fill="#1e293b" />
+</svg>
