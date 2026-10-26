@@ -66,72 +66,72 @@ The following SaaS and hosted enterprise solutions provide commercial incident c
 
 Open-source tools empower CSIRTs, SOCs, and security researchers to inspect, triage, investigate, and remediate incidents without recurring per-seat software fees. 
 
-The repositories below are **strictly sorted by current GitHub star counts (descending)**. Beside each project, the official badge links directly to that repository's Stargazers page.
+The repositories below are **strictly sorted by current GitHub Stars_Counts (descending)**. Beside each project, the official badge links directly to that repository's Stargazers page.
 
-1. **[osquery](https://github.com/osquery/osquery)** [![GitHub stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)  
+1. **[osquery](https://github.com/osquery/osquery)** [![GitHub_Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)  
    *SQL-powered operating system instrumentation, monitoring, and analytics framework.* Exposes low-level OS telemetry as relational database tables, enabling security responders to query running processes, open network sockets, loaded kernel modules, and file hashes on demand.
 
-2. **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)  
+2. **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub_Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)  
    *Unified open-source SIEM and XDR engine (GPL-2.0).* Delivers host-based intrusion detection (HIDS), file integrity monitoring (FIM), vulnerability analysis, log aggregation, and automated active response scripts to contain compromised endpoints.
 
-3. **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)** [![GitHub stars](https://img.shields.io/github/stars/redcanaryco/atomic-red-team?style=social&color=white)](https://github.com/redcanaryco/atomic-red-team/stargazers)  
+3. **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)** [![GitHub_Stars](https://img.shields.io/github/stars/redcanaryco/atomic-red-team?style=social&color=white)](https://github.com/redcanaryco/atomic-red-team/stargazers)  
    *Library of simple, open-source adversary emulation tests mapped directly to MITRE ATT&CK.* Essential for incident response teams and detection engineers to safely validate playbooks, verify SIEM rules, and stress-test endpoint telemetry.
 
-4. **[Sigma](https://github.com/SigmaHQ/sigma)** [![GitHub stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)  
+4. **[Sigma](https://github.com/SigmaHQ/sigma)** [![GitHub_Stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)  
    *The vendor-agnostic signature format for log-based detection rules.* Allows incident handlers to describe detection logic once in standardized YAML and compile it to target backends including Splunk, Azure Sentinel, Elastic, QRadar, and Greylog.
 
-5. **[OpenCTI](https://github.com/OpenCTI-Platform/opencti)** [![GitHub stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers)  
+5. **[OpenCTI](https://github.com/OpenCTI-Platform/opencti)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers)  
    *Enterprise open-source Cyber Threat Intelligence (CTI) management platform (Apache-2.0).* Organizes, correlates, and visualizes threat actors, tactics, techniques, and IoCs with native connectors to incident response and case management pipelines.
 
-6. **[YARA](https://github.com/VirusTotal/yara)** [![GitHub stars](https://img.shields.io/github/stars/VirusTotal/yara?style=social&color=white)](https://github.com/VirusTotal/yara/stargazers)  
+6. **[YARA](https://github.com/VirusTotal/yara)** [![GitHub_Stars](https://img.shields.io/github/stars/VirusTotal/yara?style=social&color=white)](https://github.com/VirusTotal/yara/stargazers)  
    *The de facto standard pattern-matching engine for malware analysts and incident responders.* Identifies and classifies malicious artifacts, memory dumps, and compromised files using rule-based textual and binary patterns.
 
-7. **[Fleet](https://github.com/fleetdm/fleet)** [![GitHub stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers)  
+7. **[Fleet](https://github.com/fleetdm/fleet)** [![GitHub_Stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers)  
    *Open-source osquery fleet manager and MDM platform (MIT).* Provides real-time endpoint observability across Linux, macOS, and Windows fleets, enabling incident teams to run live triage sweeps and retrieve volatile artifacts within seconds.
 
-8. **[MISP](https://github.com/MISP/MISP)** [![GitHub stars](https://img.shields.io/github/stars/MISP/MISP?style=social&color=white)](https://github.com/MISP/MISP/stargazers)  
+8. **[MISP](https://github.com/MISP/MISP)** [![GitHub_Stars](https://img.shields.io/github/stars/MISP/MISP?style=social&color=white)](https://github.com/MISP/MISP/stargazers)  
    *Malware Information Sharing Platform & Threat Sharing (AGPL-3.0).* Open-source threat sharing platform used globally by CERTs and CSIRTs to store, correlate, and exchange Indicators of Compromise (IoCs) and threat context.
 
-9. **[GRR Rapid Response](https://github.com/google/grr)** [![GitHub stars](https://img.shields.io/github/stars/google/grr?style=social&color=white)](https://github.com/google/grr/stargazers)  
+9. **[GRR Rapid Response](https://github.com/google/grr)** [![GitHub_Stars](https://img.shields.io/github/stars/google/grr?style=social&color=white)](https://github.com/google/grr/stargazers)  
    *Remote live forensics and fleet investigation framework by Google.* Deploys Python agents across corporate workstations and servers to execute remote forensic triage, memory acquisition, file inspection, and timeline generation.
 
-10. **[Volatility 3](https://github.com/volatilityfoundation/volatility3)** [![GitHub stars](https://img.shields.io/github/stars/volatilityfoundation/volatility3?style=social&color=white)](https://github.com/volatilityfoundation/volatility3/stargazers)  
+10. **[Volatility 3](https://github.com/volatilityfoundation/volatility3)** [![GitHub_Stars](https://img.shields.io/github/stars/volatilityfoundation/volatility3?style=social&color=white)](https://github.com/volatilityfoundation/volatility3/stargazers)  
     *The gold standard open-source volatile memory forensics analysis framework.* Written in Python 3, Volatility extracts volatile memory artifacts, unmasks rootkits, dumps injected code, and reconstructs active command-line sessions during DFIR investigations.
 
-11. **[Velociraptor](https://github.com/Velocidex/velociraptor)** [![GitHub stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers)  
+11. **[Velociraptor](https://github.com/Velocidex/velociraptor)** [![GitHub_Stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers)  
     *High-performance digital forensics, endpoint hunting, and incident response platform (Apache-2.0).* Uses the Velociraptor Query Language (VQL) to hunt across thousands of endpoints, pull MFT records, extract Prefetch data, and isolate compromised hosts.
 
-12. **[TheHive](https://github.com/TheHive-Project/TheHive)** [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)  
+12. **[TheHive](https://github.com/TheHive-Project/TheHive)** [![GitHub_Stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)  
     *Purpose-built Security Incident Response and Case Management platform (AGPL-3.0).* Designed for SOCs and CSIRTs to coordinate case tasks, track observables, assign analyst duties, and initiate automated triage via Cortex and MISP integrations.
 
-13. **[Loki](https://github.com/Neo23x0/Loki)** [![GitHub stars](https://img.shields.io/github/stars/Neo23x0/Loki?style=social&color=white)](https://github.com/Neo23x0/Loki/stargazers)  
+13. **[Loki](https://github.com/Neo23x0/Loki)** [![GitHub_Stars](https://img.shields.io/github/stars/Neo23x0/Loki?style=social&color=white)](https://github.com/Neo23x0/Loki/stargazers)  
     *Free and lightweight IOC scanner for rapid initial incident triage.* Scans endpoints for known attacker traces, file anomalies, malicious hashes, C2 hostnames, and custom YARA signatures with minimal installation overhead.
 
-14. **[Chainsaw](https://github.com/WithSecureLabs/chainsaw)** [![GitHub stars](https://img.shields.io/github/stars/WithSecureLabs/chainsaw?style=social&color=white)](https://github.com/WithSecureLabs/chainsaw/stargazers)  
+14. **[Chainsaw](https://github.com/WithSecureLabs/chainsaw)** [![GitHub_Stars](https://img.shields.io/github/stars/WithSecureLabs/chainsaw?style=social&color=white)](https://github.com/WithSecureLabs/chainsaw/stargazers)  
     *Rapid Windows Event Log hunting tool written in Rust.* Ingests and triages gigabytes of raw EVTX files in seconds by applying Sigma detection rules and forensic hunt logic to pinpoint lateral movement, persistence, and privilege escalation.
 
-15. **[Hayabusa](https://github.com/Yamato-Security/hayabusa)** [![GitHub stars](https://img.shields.io/github/stars/Yamato-Security/hayabusa?style=social&color=white)](https://github.com/Yamato-Security/hayabusa/stargazers)  
+15. **[Hayabusa](https://github.com/Yamato-Security/hayabusa)** [![GitHub_Stars](https://img.shields.io/github/stars/Yamato-Security/hayabusa?style=social&color=white)](https://github.com/Yamato-Security/hayabusa/stargazers)  
     *High-speed Windows Event Log fast forensics and threat timeline generator.* Correlates Windows event records against Sigma rules to produce unified forensic timelines for rapid intrusion analysis.
 
-16. **[Shuffle](https://github.com/Shuffle/Shuffle)** [![GitHub stars](https://img.shields.io/github/stars/Shuffle/Shuffle?style=social&color=white)](https://github.com/Shuffle/Shuffle/stargazers)  
+16. **[Shuffle](https://github.com/Shuffle/Shuffle)** [![GitHub_Stars](https://img.shields.io/github/stars/Shuffle/Shuffle?style=social&color=white)](https://github.com/Shuffle/Shuffle/stargazers)  
     *General-purpose open-source SOAR platform (AGPL-3.0).* Offers an interactive drag-and-drop workflow canvas, OpenAPI generation, 1,000+ app integrations, and automated containment actions across endpoints, firewalls, and ticket systems.
 
-17. **[MozDef](https://github.com/mozilla/MozDef)** [![GitHub stars](https://img.shields.io/github/stars/mozilla/MozDef?style=social&color=white)](https://github.com/mozilla/MozDef/stargazers)  
+17. **[MozDef](https://github.com/mozilla/MozDef)** [![GitHub_Stars](https://img.shields.io/github/stars/mozilla/MozDef?style=social&color=white)](https://github.com/mozilla/MozDef/stargazers)  
     *Mozilla Defense Platform for automated incident handling.* Provides scalable event correlation, real-time collaboration for incident handlers, and automated triage workflows tailored for fast-paced SOC teams.
 
-18. **[Matano](https://github.com/matanolabs/matano)** [![GitHub stars](https://img.shields.io/github/stars/matanolabs/matano?style=social&color=white)](https://github.com/matanolabs/matano/stargazers)  
+18. **[Matano](https://github.com/matanolabs/matano)** [![GitHub_Stars](https://img.shields.io/github/stars/matanolabs/matano?style=social&color=white)](https://github.com/matanolabs/matano/stargazers)  
     *Open-source serverless security data lake on AWS (Apache-2.0).* Ingests petabytes of security telemetry into Apache Iceberg data tables, powering real-time Python detection-as-code and cost-effective incident log exploration.
 
-19. **[Cortex](https://github.com/TheHive-Project/Cortex)** [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/Cortex?style=social&color=white)](https://github.com/TheHive-Project/Cortex/stargazers)  
+19. **[Cortex](https://github.com/TheHive-Project/Cortex)** [![GitHub_Stars](https://img.shields.io/github/stars/TheHive-Project/Cortex?style=social&color=white)](https://github.com/TheHive-Project/Cortex/stargazers)  
     *Powerful observable analysis and active response engine (AGPL-3.0).* Operates 100+ analyzers and responders to enrich IPs, domains, hashes, and URLs via VirusTotal, AbuseIPDB, and Shodan, while executing active remediation commands.
 
-20. **[DFIR-IRIS](https://github.com/dfir-iris/iris-web)** [![GitHub stars](https://img.shields.io/github/stars/dfir-iris/iris-web?style=social&color=white)](https://github.com/dfir-iris/iris-web/stargazers)  
+20. **[DFIR-IRIS](https://github.com/dfir-iris/iris-web)** [![GitHub_Stars](https://img.shields.io/github/stars/dfir-iris/iris-web?style=social&color=white)](https://github.com/dfir-iris/iris-web/stargazers)  
     *Collaborative web investigation platform for incident responders.* Features case management, timeline graphing, IoC pivoting, evidence custody logging, and collaborative notes for multi-analyst CSIRT operations.
 
-21. **[Turbinia](https://github.com/google/turbinia)** [![GitHub stars](https://img.shields.io/github/stars/google/turbinia?style=social&color=white)](https://github.com/google/turbinia/stargazers)  
+21. **[Turbinia](https://github.com/google/turbinia)** [![GitHub_Stars](https://img.shields.io/github/stars/google/turbinia?style=social&color=white)](https://github.com/google/turbinia/stargazers)  
     *Open-source incident response automation framework by Google.* Automates and scales distributed digital forensics across cloud environments by running parallel jobs for disk copying, Plaso timeline extraction, and strings scanning.
 
-22. **[XCLOAK Security Suite](https://github.com/The-Abhishek1/XCLOAK-SECURITY-SUITE)** [![GitHub stars](https://img.shields.io/github/stars/The-Abhishek1/XCLOAK-SECURITY-SUITE?style=social&color=white)](https://github.com/The-Abhishek1/XCLOAK-SECURITY-SUITE/stargazers)  
+22. **[XCLOAK Security Suite](https://github.com/The-Abhishek1/XCLOAK-SECURITY-SUITE)** [![GitHub_Stars](https://img.shields.io/github/stars/The-Abhishek1/XCLOAK-SECURITY-SUITE?style=social&color=white)](https://github.com/The-Abhishek1/XCLOAK-SECURITY-SUITE/stargazers)  
     *All-in-one open-source SOC and SOAR suite (AGPL-3.0).* Combines SIEM, SOAR, EDR, human-approval gates for containment, AI-powered MITRE playbook suggestions, and automated file-integrity quarantine.
 
 ---
@@ -187,7 +187,7 @@ We welcome contributions from the infosec and incident response community!
 2. 🌿 **Create a feature branch** (`git checkout -b add-new-ir-tool`).
 3. 📝 **Add or update entries** following the established format:
    - For SaaS tools: include verified starting pricing and exact free trial/tier limits.
-   - For open-source tools: include the repository link, star count badge, and a concise 1–2 sentence description.
+   - For open-source tools: include the repository link, Stars_Count badge, and a concise 1–2 sentence description.
 4. ✅ **Ensure accuracy**: link only to official project websites or trusted source repositories.
 5. 🚀 **Submit a Pull Request** with a brief summary of why the tool should be added.
 
